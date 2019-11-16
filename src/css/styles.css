@@ -1,0 +1,294 @@
+/*  Top Nav CSS   */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav_contact {
+    font-size: 12px;
+    min-height: 25px;
+    background-color: #232f3e;
+    color: #dddddd;
+  }
+
+  .topnav_contact > span > i{
+      margin: 2px 5px 0px 0px;
+  }
+
+  .topnav_contact > .email{
+    float: right;
+    margin: 2px 100px;
+  }
+
+  .topnav_contact > .mobile{
+    float: left;
+    margin: 2px 100px;
+    }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #c0c5ce;
+  }
+  
+  .topnav a {
+    float: right;
+    display: block;
+    color: #232f3e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:first-child {
+      float: left;
+      font-size: 1.2em;
+      font-weight: bold;
+      font-style: italic;
+      font-family: Chalkduster, fantasy;
+      color: #232f3e
+  }
+  
+  .topnav a:hover {
+    border-bottom: 3px solid;
+    border-color: #232f3e;
+    color: white;
+  }
+  
+  .topnav a:first-child:hover {
+    border-bottom: 0px;
+    color: #232f3e;
+ } 
+
+  .topnav .icon {
+    display: none;
+  }
+  /* Carousel Image custom css */
+.carouselImage {
+    width: 100%;
+    height: 500px; 
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 7%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #e5e5e5;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 18px;
+}
+
+/*  Packages CSS */
+.packages-list {
+    margin: 50px;
+}
+
+.lined_heading {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    display: block;
+    color: #232f3e;
+}
+
+.lined_heading::before {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-top: 2px solid #ccc;
+    content: "";
+    color: #232f3e;
+}
+
+.lined_heading > span {
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+    background: #fff;
+    display: inline-block;
+    color: #232f3e;
+}
+
+.packages-list > .row {
+    margin-top: 25px;
+}
+
+.card-body {
+    min-height: 240px;
+    border-color: #232f3e;
+    background-color: #fafafa;
+}
+
+.card-body:hover {
+    border: 0px solid;
+    box-shadow: 5px 10px 8px #232f3e;
+}
+
+.open_card {
+    border: 1px solid;
+    box-shadow: 5px 10px 8px #232f3e;
+}
+
+.package_wrapper > h5 , .card-title{
+    /*font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;*/
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.card-title {
+    font-size: 17px;
+}
+
+.package_wrapper > h6{
+    margin-top: 15px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.package_wrapper > span{
+    font-size: 14px;
+    font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+.package_wrapper > ul > li , .card-text > ul > li{
+    font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+}
+
+.card-text {
+    font-size: 15px;
+}
+
+.card > .btn {
+    background-color:#232f3e;
+    color: #dddddd;
+}
+
+/* Contact Us CSS */
+.contacts_container {
+    background-color:#232f3e;
+    min-height: 150px;
+    color: #dddddd;
+}
+
+.contacts_wrapper {
+    padding-top: 25px;
+}
+
+.email_us {
+    display: block;
+}
+
+.contacts_container > .row {
+    padding: 30px;
+    text-align: center;
+}
+
+.contacts_container > .row > .col-sm-6 > .contact_heading{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contacts_container > .row > .col-sm-6 {
+    margin-top: 10px;
+}
+
+.contacts_container > .row > .col-sm-6 > .contact_content{
+    display: block;
+    font-size: 13px;
+}
+
+/* Gallery CSS*/
+
+.gallery_container img {
+    border: 1px solid #232f3e;
+}
+
+.gallery_container img:hover {
+    box-shadow: 5px 10px 8px #232f3e;
+}
+
+@media screen and (max-width: 600px) {
+    /*  Top Nav CSS   */
+    .topnav_contact {
+        font-size: 12px;
+        min-height: 35px;
+    }
+    .topnav_contact > .email{
+        float: right;
+        margin: 5px 5px;
+    }
+    .topnav_contact > .mobile{
+        float: left;
+        margin: 5px 5px;
+    }
+
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      color: #232f3e;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    /* Carousel Image custom css */
+    .carouselImage {
+        width: 100%;
+        height: 300px; 
+    }
+    .carousel-control-prev, .carousel-control-next {
+        width: 15%;
+    }
+
+
+    /*  Packages CSS */
+    .packages-list {
+        margin: 50px 5px 0px 5px;
+    }
+    .packages-list > .row {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    .packages-list > .row > .col-sm-6 {
+        margin-bottom: 30px;
+    }
+    .packages-list > .row:first-child {
+        margin-top: 30px;
+    }
+
+    /* Contact us CSS*/
+    .contacts_container > .row {
+        width: 100%;
+        padding: 0px;
+    }
+    .contacts_container > .row > .col-sm-6 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .contacts_container > .row > .col-sm-6 > .contact_heading{
+        display: block;
+        margin: 10px 0px;
+    }
+
+  }
