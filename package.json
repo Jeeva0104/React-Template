@@ -63,6 +63,6 @@
     "socket.io-client": "^2.1.1",
     "sweetalert-react": "^0.4.11",
     "uglifyjs-webpack-plugin": "^2.0.0",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   }
 }
